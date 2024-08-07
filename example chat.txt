@@ -1,0 +1,273 @@
+C:\Users\Asus\Documents\GitHub\mitAssignment\venv\Scripts\python.exe C:\Users\Asus\Documents\GitHub\mitAssignment\llama3.1.py
+2024-08-07 03:43:15,947 - INFO - Use pytorch device_name: cpu
+2024-08-07 03:43:15,947 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-08-07 03:43:18,870 - INFO - Loading cached stock_index
+2024-08-07 03:43:18,871 - INFO - Loading cached consumption_index
+Welcome to the Stock Inventory Chat!
+You can ask questions about stock levels, consumption, and orders.
+Type 'exit' to end the chat.
+
+You: 2024-08-07 03:43:18,882 - INFO - Loading cached order_index
+what type of beer we have?
+2024-08-07 03:43:31,225 - INFO - Sending request to LlamaAPI for query refinement: what type of beer we have?
+Processing your query...
+2024-08-07 03:43:36,070 - INFO - Received refined query from LlamaAPI: <Response [200]>
+2024-08-07 03:43:36,070 - INFO - Performing vector search with refined query: Refined Query for Vector Search: "beer types" or "available beers" or "beer options"
+
+This refined query focuses on the key terms and concepts related to the original query, making it more specific and clear for a vector-based search. The search engine can then look for vectors that are semantically similar to these terms, providing more accurate and relevant results.
+Batches: 100%|██████████| 1/1 [00:00<00:00,  5.15it/s]
+2024-08-07 03:43:36,266 - INFO - Querying vector store with query: Refined Query for Vector Search: "beer types" or "available beers" or "beer options"
+
+This refined query focuses on the key terms and concepts related to the original query, making it more specific and clear for a vector-based search. The search engine can then look for vectors that are semantically similar to these terms, providing more accurate and relevant results.
+2024-08-07 03:43:36,270 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.3303134, 1.3513697, 1.3774331, 1.3925936, 1.4010341, 1.4107862, 1.4490385, 1.4655612, 1.4793417, 1.4797816], ids=['64', '2', '61', '67', '33', '29', '8', '44', '43', '47'])
+Batches: 100%|██████████| 1/1 [00:00<00:00, 35.07it/s]
+2024-08-07 03:43:36,301 - INFO - Querying vector store with query: Refined Query for Vector Search: "beer types" or "available beers" or "beer options"
+
+This refined query focuses on the key terms and concepts related to the original query, making it more specific and clear for a vector-based search. The search engine can then look for vectors that are semantically similar to these terms, providing more accurate and relevant results.
+2024-08-07 03:43:36,303 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134], ids=['600', '601', '602', '603', '604', '605', '606', '607', '608', '609'])
+Batches: 100%|██████████| 1/1 [00:00<00:00, 35.71it/s]
+2024-08-07 03:43:36,337 - INFO - Querying vector store with query: Refined Query for Vector Search: "beer types" or "available beers" or "beer options"
+
+This refined query focuses on the key terms and concepts related to the original query, making it more specific and clear for a vector-based search. The search engine can then look for vectors that are semantically similar to these terms, providing more accurate and relevant results.
+2024-08-07 03:43:36,337 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134, 1.3303134], ids=['66', '67', '68', '69', '70', '71', '72', '73', '74', '75'])
+2024-08-07 03:43:36,339 - INFO - Top results: [{'content': "{'Name': 'Porter Beer', 'Price': 75.922, 'Order Date': '2024-08-05', 'Delivered Date': '2024-08-17', 'Stock': 119}", 'metadata': {'Name': 'Porter Beer', 'Price': 75.922, 'Order Date': '2024-08-05', 'Delivered Date': '2024-08-17', 'Stock': 119}, 'score': 1.4797816276550293}, {'content': "{'Name': 'Pale Ale Beer', 'Price': 27.459, 'Order Date': '2024-08-06', 'Delivered Date': '2024-08-07', 'Stock': 148}", 'metadata': {'Name': 'Pale Ale Beer', 'Price': 27.459, 'Order Date': '2024-08-06', 'Delivered Date': '2024-08-07', 'Stock': 148}, 'score': 1.479341745376587}, {'content': "{'Name': 'Pilsner Beer', 'Price': 100.321, 'Order Date': '2024-07-30', 'Delivered Date': '2024-08-06', 'Stock': 119}", 'metadata': {'Name': 'Pilsner Beer', 'Price': 100.321, 'Order Date': '2024-07-30', 'Delivered Date': '2024-08-06', 'Stock': 119}, 'score': 1.4655611515045166}, {'content': "{'Name': 'Brown Ale Beer', 'Price': 107.146, 'Order Date': '2024-07-22', 'Delivered Date': '2024-07-29', 'Stock': 117}", 'metadata': {'Name': 'Brown Ale Beer', 'Price': 107.146, 'Order Date': '2024-07-22', 'Delivered Date': '2024-07-29', 'Stock': 117}, 'score': 1.4490385055541992}, {'content': "{'Name': 'IPA Beer', 'Price': 166.948, 'Order Date': '2024-07-04', 'Delivered Date': '2024-07-10', 'Stock': 76}", 'metadata': {'Name': 'IPA Beer', 'Price': 166.948, 'Order Date': '2024-07-04', 'Delivered Date': '2024-07-10', 'Stock': 76}, 'score': 1.4107861518859863}, {'content': "{'Name': 'Lager Beer', 'Price': 177.514, 'Order Date': '2024-07-24', 'Delivered Date': '2024-07-27', 'Stock': 122}", 'metadata': {'Name': 'Lager Beer', 'Price': 177.514, 'Order Date': '2024-07-24', 'Delivered Date': '2024-07-27', 'Stock': 122}, 'score': 1.4010341167449951}, {'content': "{'Name': 'Wheat Beer Beer', 'Price': 181.535, 'Order Date': '2024-07-16', 'Delivered Date': '2024-07-25', 'Stock': 130}", 'metadata': {'Name': 'Wheat Beer Beer', 'Price': 181.535, 'Order Date': '2024-07-16', 'Delivered Date': '2024-07-25', 'Stock': 130}, 'score': 1.3925936222076416}, {'content': "{'Name': 'Sour Beer Beer', 'Price': 46.787, 'Order Date': '2024-07-29', 'Delivered Date': '2024-08-07', 'Stock': 97}", 'metadata': {'Name': 'Sour Beer Beer', 'Price': 46.787, 'Order Date': '2024-07-29', 'Delivered Date': '2024-08-07', 'Stock': 97}, 'score': 1.3774330615997314}, {'content': "{'Name': 'Ale Beer', 'Price': 143.725, 'Order Date': '2024-08-02', 'Delivered Date': '2024-08-11', 'Stock': 115}", 'metadata': {'Name': 'Ale Beer', 'Price': 143.725, 'Order Date': '2024-08-02', 'Delivered Date': '2024-08-11', 'Stock': 115}, 'score': 1.3513697385787964}, {'content': "{'Name': 'Stout Beer', 'Price': 128.647, 'Order Date': '2024-07-25', 'Delivered Date': '2024-07-28', 'Stock': 119}", 'metadata': {'Name': 'Stout Beer', 'Price': 128.647, 'Order Date': '2024-07-25', 'Delivered Date': '2024-07-28', 'Stock': 119}, 'score': 1.3303134441375732}]
+2024-08-07 03:43:36,339 - INFO - Sending request to LlamaAPI for result interpretation: what type of beer we have?
+
+Assistant: We have a variety of beers available, including Porter, Pale Ale, Pilsner, Brown Ale, IPA, Lager, Wheat Beer, Sour Beer, Ale, and Stout.
+
+You: 2024-08-07 03:43:39,733 - INFO - Received interpretation from LlamaAPI: <Response [200]>
+what is beer with lower price
+2024-08-07 03:44:01,593 - INFO - Sending request to LlamaAPI for query refinement: what is beer with lower price
+Processing your query...
+2024-08-07 03:44:06,165 - INFO - Received refined query from LlamaAPI: <Response [200]>
+2024-08-07 03:44:06,165 - INFO - Performing vector search with refined query: Refined Query for Vector Search: "affordable beers" or "budget-friendly beers"
+
+This refinement focuses on the key concept of "lower price" and uses specific terms that are relevant for semantic similarity, such as "affordable" and "budget-friendly". These terms are likely to appear in descriptions or reviews of beers that are priced lower, making it easier for the vector-based search to identify relevant results.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 31.26it/s]
+2024-08-07 03:44:06,198 - INFO - Querying vector store with query: Refined Query for Vector Search: "affordable beers" or "budget-friendly beers"
+
+This refinement focuses on the key concept of "lower price" and uses specific terms that are relevant for semantic similarity, such as "affordable" and "budget-friendly". These terms are likely to appear in descriptions or reviews of beers that are priced lower, making it easier for the vector-based search to identify relevant results.
+2024-08-07 03:44:06,198 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.2897086, 1.3070995, 1.3175851, 1.3311862, 1.3384737, 1.3793819, 1.4278206, 1.4430083, 1.446861, 1.4559139], ids=['2', '64', '67', '33', '29', '43', '44', '61', '47', '8'])
+Batches: 100%|██████████| 1/1 [00:00<00:00, 35.07it/s]
+2024-08-07 03:44:06,229 - INFO - Querying vector store with query: Refined Query for Vector Search: "affordable beers" or "budget-friendly beers"
+
+This refinement focuses on the key concept of "lower price" and uses specific terms that are relevant for semantic similarity, such as "affordable" and "budget-friendly". These terms are likely to appear in descriptions or reviews of beers that are priced lower, making it easier for the vector-based search to identify relevant results.
+2024-08-07 03:44:06,231 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086], ids=['1200', '1201', '1202', '1203', '1204', '1205', '1206', '1207', '1208', '1209'])
+Batches: 100%|██████████| 1/1 [00:00<00:00, 35.71it/s]
+2024-08-07 03:44:06,263 - INFO - Querying vector store with query: Refined Query for Vector Search: "affordable beers" or "budget-friendly beers"
+
+This refinement focuses on the key concept of "lower price" and uses specific terms that are relevant for semantic similarity, such as "affordable" and "budget-friendly". These terms are likely to appear in descriptions or reviews of beers that are priced lower, making it easier for the vector-based search to identify relevant results.
+2024-08-07 03:44:06,263 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086, 1.2897086], ids=['131', '132', '133', '134', '135', '136', '137', '138', '139', '140'])
+2024-08-07 03:44:06,265 - INFO - Top results: [{'content': "{'Name': 'Brown Ale Beer', 'Price': 107.146, 'Order Date': '2024-07-22', 'Delivered Date': '2024-07-29', 'Stock': 117}", 'metadata': {'Name': 'Brown Ale Beer', 'Price': 107.146, 'Order Date': '2024-07-22', 'Delivered Date': '2024-07-29', 'Stock': 117}, 'score': 1.4559139013290405}, {'content': "{'Name': 'Porter Beer', 'Price': 75.922, 'Order Date': '2024-08-05', 'Delivered Date': '2024-08-17', 'Stock': 119}", 'metadata': {'Name': 'Porter Beer', 'Price': 75.922, 'Order Date': '2024-08-05', 'Delivered Date': '2024-08-17', 'Stock': 119}, 'score': 1.4468610286712646}, {'content': "{'Name': 'Sour Beer Beer', 'Price': 46.787, 'Order Date': '2024-07-29', 'Delivered Date': '2024-08-07', 'Stock': 97}", 'metadata': {'Name': 'Sour Beer Beer', 'Price': 46.787, 'Order Date': '2024-07-29', 'Delivered Date': '2024-08-07', 'Stock': 97}, 'score': 1.443008303642273}, {'content': "{'Name': 'Pilsner Beer', 'Price': 100.321, 'Order Date': '2024-07-30', 'Delivered Date': '2024-08-06', 'Stock': 119}", 'metadata': {'Name': 'Pilsner Beer', 'Price': 100.321, 'Order Date': '2024-07-30', 'Delivered Date': '2024-08-06', 'Stock': 119}, 'score': 1.4278205633163452}, {'content': "{'Name': 'Pale Ale Beer', 'Price': 27.459, 'Order Date': '2024-08-06', 'Delivered Date': '2024-08-07', 'Stock': 148}", 'metadata': {'Name': 'Pale Ale Beer', 'Price': 27.459, 'Order Date': '2024-08-06', 'Delivered Date': '2024-08-07', 'Stock': 148}, 'score': 1.3793818950653076}, {'content': "{'Name': 'IPA Beer', 'Price': 166.948, 'Order Date': '2024-07-04', 'Delivered Date': '2024-07-10', 'Stock': 76}", 'metadata': {'Name': 'IPA Beer', 'Price': 166.948, 'Order Date': '2024-07-04', 'Delivered Date': '2024-07-10', 'Stock': 76}, 'score': 1.3384736776351929}, {'content': "{'Name': 'Lager Beer', 'Price': 177.514, 'Order Date': '2024-07-24', 'Delivered Date': '2024-07-27', 'Stock': 122}", 'metadata': {'Name': 'Lager Beer', 'Price': 177.514, 'Order Date': '2024-07-24', 'Delivered Date': '2024-07-27', 'Stock': 122}, 'score': 1.3311861753463745}, {'content': "{'Name': 'Wheat Beer Beer', 'Price': 181.535, 'Order Date': '2024-07-16', 'Delivered Date': '2024-07-25', 'Stock': 130}", 'metadata': {'Name': 'Wheat Beer Beer', 'Price': 181.535, 'Order Date': '2024-07-16', 'Delivered Date': '2024-07-25', 'Stock': 130}, 'score': 1.3175851106643677}, {'content': "{'Name': 'Stout Beer', 'Price': 128.647, 'Order Date': '2024-07-25', 'Delivered Date': '2024-07-28', 'Stock': 119}", 'metadata': {'Name': 'Stout Beer', 'Price': 128.647, 'Order Date': '2024-07-25', 'Delivered Date': '2024-07-28', 'Stock': 119}, 'score': 1.307099461555481}, {'content': "{'Name': 'Ale Beer', 'Price': 143.725, 'Order Date': '2024-08-02', 'Delivered Date': '2024-08-11', 'Stock': 115}", 'metadata': {'Name': 'Ale Beer', 'Price': 143.725, 'Order Date': '2024-08-02', 'Delivered Date': '2024-08-11', 'Stock': 115}, 'score': 1.2897086143493652}]
+2024-08-07 03:44:06,266 - INFO - Sending request to LlamaAPI for result interpretation: what is beer with lower price
+
+Assistant: Based on the vector search results, the top 3 beers with lower prices are:
+
+1. Pale Ale Beer - $27.459
+2. Sour Beer Beer - $46.787
+3. Porter Beer - $75.922
+
+These beers have the lowest prices among the results, ranging from $27.459 to $75.922.
+
+You: 2024-08-07 03:44:09,893 - INFO - Received interpretation from LlamaAPI: <Response [200]>
+what is the most overpriced beer?
+Processing your query...
+2024-08-07 03:44:33,812 - INFO - Sending request to LlamaAPI for query refinement: what is the most overpriced beer?
+2024-08-07 03:44:39,842 - INFO - Received refined query from LlamaAPI: <Response [200]>
+2024-08-07 03:44:39,842 - INFO - Performing vector search with refined query: Refined Query for Vector Search: "most expensive beers in the world"
+
+Key terms and concepts for semantic similarity:
+
+* "overpriced" is replaced with "most expensive" to make the query more specific and objective
+* "beer" is kept as the main subject of the query
+* "in the world" is added to broaden the scope and make the query more comprehensive
+
+This refined query is more suitable for a vector-based search as it uses precise language and focuses on the key concept of "expensive beers". The search results will likely return a list of the priciest beers globally, allowing for a more accurate answer to the original question.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 21.68it/s]
+2024-08-07 03:44:39,890 - INFO - Querying vector store with query: Refined Query for Vector Search: "most expensive beers in the world"
+
+Key terms and concepts for semantic similarity:
+
+* "overpriced" is replaced with "most expensive" to make the query more specific and objective
+* "beer" is kept as the main subject of the query
+* "in the world" is added to broaden the scope and make the query more comprehensive
+
+This refined query is more suitable for a vector-based search as it uses precise language and focuses on the key concept of "expensive beers". The search results will likely return a list of the priciest beers globally, allowing for a more accurate answer to the original question.
+2024-08-07 03:44:39,891 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.2374634, 1.2441821, 1.2489712, 1.2548953, 1.3143384, 1.3431094, 1.3685278, 1.3691823, 1.3734839, 1.3789053], ids=['67', '33', '2', '64', '29', '44', '61', '47', '8', '43'])
+Batches: 100%|██████████| 1/1 [00:00<00:00, 24.39it/s]
+2024-08-07 03:44:39,934 - INFO - Querying vector store with query: Refined Query for Vector Search: "most expensive beers in the world"
+
+Key terms and concepts for semantic similarity:
+
+* "overpriced" is replaced with "most expensive" to make the query more specific and objective
+* "beer" is kept as the main subject of the query
+* "in the world" is added to broaden the scope and make the query more comprehensive
+
+This refined query is more suitable for a vector-based search as it uses precise language and focuses on the key concept of "expensive beers". The search results will likely return a list of the priciest beers globally, allowing for a more accurate answer to the original question.
+2024-08-07 03:44:39,936 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634], ids=['1800', '1801', '1802', '1803', '1804', '1805', '1806', '1807', '1808', '1809'])
+Batches: 100%|██████████| 1/1 [00:00<00:00, 24.68it/s]
+2024-08-07 03:44:39,980 - INFO - Querying vector store with query: Refined Query for Vector Search: "most expensive beers in the world"
+
+Key terms and concepts for semantic similarity:
+
+* "overpriced" is replaced with "most expensive" to make the query more specific and objective
+* "beer" is kept as the main subject of the query
+* "in the world" is added to broaden the scope and make the query more comprehensive
+
+This refined query is more suitable for a vector-based search as it uses precise language and focuses on the key concept of "expensive beers". The search results will likely return a list of the priciest beers globally, allowing for a more accurate answer to the original question.
+2024-08-07 03:44:39,980 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634, 1.2374634], ids=['199', '200', '201', '202', '203', '204', '205', '206', '207', '208'])
+2024-08-07 03:44:39,982 - INFO - Top results: [{'content': "{'Name': 'Pale Ale Beer', 'Price': 27.459, 'Order Date': '2024-08-06', 'Delivered Date': '2024-08-07', 'Stock': 148}", 'metadata': {'Name': 'Pale Ale Beer', 'Price': 27.459, 'Order Date': '2024-08-06', 'Delivered Date': '2024-08-07', 'Stock': 148}, 'score': 1.3789052963256836}, {'content': "{'Name': 'Brown Ale Beer', 'Price': 107.146, 'Order Date': '2024-07-22', 'Delivered Date': '2024-07-29', 'Stock': 117}", 'metadata': {'Name': 'Brown Ale Beer', 'Price': 107.146, 'Order Date': '2024-07-22', 'Delivered Date': '2024-07-29', 'Stock': 117}, 'score': 1.3734838962554932}, {'content': "{'Name': 'Porter Beer', 'Price': 75.922, 'Order Date': '2024-08-05', 'Delivered Date': '2024-08-17', 'Stock': 119}", 'metadata': {'Name': 'Porter Beer', 'Price': 75.922, 'Order Date': '2024-08-05', 'Delivered Date': '2024-08-17', 'Stock': 119}, 'score': 1.3691823482513428}, {'content': "{'Name': 'Sour Beer Beer', 'Price': 46.787, 'Order Date': '2024-07-29', 'Delivered Date': '2024-08-07', 'Stock': 97}", 'metadata': {'Name': 'Sour Beer Beer', 'Price': 46.787, 'Order Date': '2024-07-29', 'Delivered Date': '2024-08-07', 'Stock': 97}, 'score': 1.3685277700424194}, {'content': "{'Name': 'Pilsner Beer', 'Price': 100.321, 'Order Date': '2024-07-30', 'Delivered Date': '2024-08-06', 'Stock': 119}", 'metadata': {'Name': 'Pilsner Beer', 'Price': 100.321, 'Order Date': '2024-07-30', 'Delivered Date': '2024-08-06', 'Stock': 119}, 'score': 1.343109369277954}, {'content': "{'Name': 'IPA Beer', 'Price': 166.948, 'Order Date': '2024-07-04', 'Delivered Date': '2024-07-10', 'Stock': 76}", 'metadata': {'Name': 'IPA Beer', 'Price': 166.948, 'Order Date': '2024-07-04', 'Delivered Date': '2024-07-10', 'Stock': 76}, 'score': 1.3143384456634521}, {'content': "{'Name': 'Stout Beer', 'Price': 128.647, 'Order Date': '2024-07-25', 'Delivered Date': '2024-07-28', 'Stock': 119}", 'metadata': {'Name': 'Stout Beer', 'Price': 128.647, 'Order Date': '2024-07-25', 'Delivered Date': '2024-07-28', 'Stock': 119}, 'score': 1.2548953294754028}, {'content': "{'Name': 'Ale Beer', 'Price': 143.725, 'Order Date': '2024-08-02', 'Delivered Date': '2024-08-11', 'Stock': 115}", 'metadata': {'Name': 'Ale Beer', 'Price': 143.725, 'Order Date': '2024-08-02', 'Delivered Date': '2024-08-11', 'Stock': 115}, 'score': 1.2489712238311768}, {'content': "{'Name': 'Lager Beer', 'Price': 177.514, 'Order Date': '2024-07-24', 'Delivered Date': '2024-07-27', 'Stock': 122}", 'metadata': {'Name': 'Lager Beer', 'Price': 177.514, 'Order Date': '2024-07-24', 'Delivered Date': '2024-07-27', 'Stock': 122}, 'score': 1.2441821098327637}, {'content': "{'Name': 'Wheat Beer Beer', 'Price': 181.535, 'Order Date': '2024-07-16', 'Delivered Date': '2024-07-25', 'Stock': 130}", 'metadata': {'Name': 'Wheat Beer Beer', 'Price': 181.535, 'Order Date': '2024-07-16', 'Delivered Date': '2024-07-25', 'Stock': 130}, 'score': 1.237463355064392}]
+2024-08-07 03:44:39,982 - INFO - Sending request to LlamaAPI for result interpretation: what is the most overpriced beer?
+
+Assistant: Based on the vector search results, the most overpriced beer is Wheat Beer Beer with a price of 181.535.
+
+You: 2024-08-07 03:44:43,839 - INFO - Received interpretation from LlamaAPI: <Response [200]>
+what kind of vodka we have in stock and how many
+Processing your query...
+2024-08-07 03:45:00,694 - INFO - Sending request to LlamaAPI for query refinement: what kind of vodka we have in stock and how many
+2024-08-07 03:45:04,614 - INFO - Received refined query from LlamaAPI: <Response [200]>
+2024-08-07 03:45:04,614 - INFO - Performing vector search with refined query: Refined Query for Vector Search: "available vodka types and quantities"
+
+This refined query focuses on the key terms "available", "vodka", "types", and "quantities" to enable a vector-based search to find semantically similar results related to the types of vodka in stock and their quantities.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 43.48it/s]
+2024-08-07 03:45:04,638 - INFO - Querying vector store with query: Refined Query for Vector Search: "available vodka types and quantities"
+
+This refined query focuses on the key terms "available", "vodka", "types", and "quantities" to enable a vector-based search to find semantically similar results related to the types of vodka in stock and their quantities.
+2024-08-07 03:45:04,639 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.2054954, 1.2451415, 1.251321, 1.2529976, 1.2559353, 1.2723335, 1.2783039, 1.2970202, 1.3370426, 1.3717078], ids=['22', '48', '12', '50', '28', '41', '13', '14', '27', '24'])
+Batches: 100%|██████████| 1/1 [00:00<00:00, 43.48it/s]
+2024-08-07 03:45:04,664 - INFO - Querying vector store with query: Refined Query for Vector Search: "available vodka types and quantities"
+
+This refined query focuses on the key terms "available", "vodka", "types", and "quantities" to enable a vector-based search to find semantically similar results related to the types of vodka in stock and their quantities.
+2024-08-07 03:45:04,666 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954], ids=['9300', '9301', '9302', '9303', '9304', '9305', '9306', '9307', '9308', '9309'])
+Batches: 100%|██████████| 1/1 [00:00<00:00, 43.48it/s]
+2024-08-07 03:45:04,692 - INFO - Querying vector store with query: Refined Query for Vector Search: "available vodka types and quantities"
+
+This refined query focuses on the key terms "available", "vodka", "types", and "quantities" to enable a vector-based search to find semantically similar results related to the types of vodka in stock and their quantities.
+2024-08-07 03:45:04,692 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954, 1.2054954], ids=['1095', '1096', '1097', '1098', '1099', '1100', '1101', '1102', '1103', '1104'])
+2024-08-07 03:45:04,694 - INFO - Top results: [{'content': "{'Name': 'Gluten-Free Vodka Vodka', 'Price': 170.449, 'Order Date': '2024-05-07', 'Delivered Date': '2024-05-13', 'Stock': 121}", 'metadata': {'Name': 'Gluten-Free Vodka Vodka', 'Price': 170.449, 'Order Date': '2024-05-07', 'Delivered Date': '2024-05-13', 'Stock': 121}, 'score': 1.371707797050476}, {'content': "{'Name': 'Grain Vodka Vodka', 'Price': 121.745, 'Order Date': '2024-06-29', 'Delivered Date': '2024-07-09', 'Stock': 112}", 'metadata': {'Name': 'Grain Vodka Vodka', 'Price': 121.745, 'Order Date': '2024-06-29', 'Delivered Date': '2024-07-09', 'Stock': 112}, 'score': 1.3370425701141357}, {'content': "{'Name': 'Corn Vodka Vodka', 'Price': 63.949, 'Order Date': '2024-07-27', 'Delivered Date': '2024-07-28', 'Stock': 108}", 'metadata': {'Name': 'Corn Vodka Vodka', 'Price': 63.949, 'Order Date': '2024-07-27', 'Delivered Date': '2024-07-28', 'Stock': 108}, 'score': 1.2970201969146729}, {'content': "{'Name': 'Classic Vodka Vodka', 'Price': 195.326, 'Order Date': '2024-07-02', 'Delivered Date': '2024-07-11', 'Stock': 111}", 'metadata': {'Name': 'Classic Vodka Vodka', 'Price': 195.326, 'Order Date': '2024-07-02', 'Delivered Date': '2024-07-11', 'Stock': 111}, 'score': 1.278303861618042}, {'content': "{'Name': 'Organic Vodka Vodka', 'Price': 20.17, 'Order Date': '2024-07-15', 'Delivered Date': '2024-07-19', 'Stock': 119}", 'metadata': {'Name': 'Organic Vodka Vodka', 'Price': 20.17, 'Order Date': '2024-07-15', 'Delivered Date': '2024-07-19', 'Stock': 119}, 'score': 1.2723335027694702}, {'content': "{'Name': 'Herb Vodka Vodka', 'Price': 93.769, 'Order Date': '2024-06-23', 'Delivered Date': '2024-06-27', 'Stock': 116}", 'metadata': {'Name': 'Herb Vodka Vodka', 'Price': 93.769, 'Order Date': '2024-06-23', 'Delivered Date': '2024-06-27', 'Stock': 116}, 'score': 1.2559353113174438}, {'content': "{'Name': 'Premium Vodka Vodka', 'Price': 169.874, 'Order Date': '2024-07-31', 'Delivered Date': '2024-08-07', 'Stock': 126}", 'metadata': {'Name': 'Premium Vodka Vodka', 'Price': 169.874, 'Order Date': '2024-07-31', 'Delivered Date': '2024-08-07', 'Stock': 126}, 'score': 1.252997636795044}, {'content': "{'Name': 'Citrus Vodka Vodka', 'Price': 145.021, 'Order Date': '2024-06-24', 'Delivered Date': '2024-06-29', 'Stock': 102}", 'metadata': {'Name': 'Citrus Vodka Vodka', 'Price': 145.021, 'Order Date': '2024-06-24', 'Delivered Date': '2024-06-29', 'Stock': 102}, 'score': 1.2513209581375122}, {'content': "{'Name': 'Potato Vodka Vodka', 'Price': 51.847, 'Order Date': '2024-07-03', 'Delivered Date': '2024-07-13', 'Stock': 74}", 'metadata': {'Name': 'Potato Vodka Vodka', 'Price': 51.847, 'Order Date': '2024-07-03', 'Delivered Date': '2024-07-13', 'Stock': 74}, 'score': 1.2451415061950684}, {'content': "{'Name': 'Flavored Vodka Vodka', 'Price': 196.686, 'Order Date': '2024-08-04', 'Delivered Date': '2024-08-14', 'Stock': 118}", 'metadata': {'Name': 'Flavored Vodka Vodka', 'Price': 196.686, 'Order Date': '2024-08-04', 'Delivered Date': '2024-08-14', 'Stock': 118}, 'score': 1.2054953575134277}]
+2024-08-07 03:45:04,694 - INFO - Sending request to LlamaAPI for result interpretation: what kind of vodka we have in stock and how many
+2024-08-07 03:45:09,108 - INFO - Received interpretation from LlamaAPI: <Response [200]>
+
+Assistant: We have several types of vodka in stock, including Gluten-Free Vodka, Grain Vodka, Corn Vodka, Classic Vodka, Organic Vodka, Herb Vodka, Premium Vodka, Citrus Vodka, Potato Vodka, and Flavored Vodka. The quantities in stock vary, ranging from 74 bottles of Potato Vodka to 126 bottles of Premium Vodka.
+
+You: please provide me a stock number for Gluten-Free Vodka, Grain Vodka, Corn Vodka, Classic Vodka, Organic Vodka, Herb Vodka, Premium Vodka, Citrus Vodka, Potato Vodka, and Flavored Vodka
+Processing your query...
+2024-08-07 03:45:31,150 - INFO - Sending request to LlamaAPI for query refinement: please provide me a stock number for Gluten-Free Vodka, Grain Vodka, Corn Vodka, Classic Vodka, Organic Vodka, Herb Vodka, Premium Vodka, Citrus Vodka, Potato Vodka, and Flavored Vodka
+2024-08-07 03:45:38,566 - INFO - Received refined query from LlamaAPI: <Response [200]>
+2024-08-07 03:45:38,567 - INFO - Performing vector search with refined query: Refined Query for Vector Search:
+
+"Find stock numbers for various vodka types: Gluten-Free, Grain, Corn, Classic, Organic, Herb, Premium, Citrus, Potato, and Flavored"
+
+Key Terms and Concepts:
+
+* Vodka types (e.g. Gluten-Free, Grain, Corn, etc.)
+* Stock numbers
+* Semantic similarity: focus on vodka-related terms, synonyms, and related concepts to retrieve relevant results.
+
+Vector Search Strategy:
+
+* Use a combination of exact matching and semantic search to retrieve stock numbers for the specified vodka types.
+* Leverage word embeddings and vector representations to capture relationships between vodka-related terms and concepts.
+* Adjust the search algorithm to prioritize results with high semantic similarity to the query terms.
+
+Example Search Vectors:
+
+* ["Gluten-Free Vodka", "Grain Vodka", "Corn Vodka", ...]
+* ["Vodka Stock Numbers", "Inventory", "Product Codes"]
+* ["Premium Spirits", "Organic Liquor", "Flavored Drinks"]
+
+By refining the query and focusing on key terms and concepts, the vector search can effectively retrieve relevant stock numbers for the various vodka types while minimizing noise and irrelevant results.
+Batches: 100%|██████████| 1/1 [00:00<00:00, 11.89it/s]
+2024-08-07 03:45:38,652 - INFO - Querying vector store with query: Refined Query for Vector Search:
+
+"Find stock numbers for various vodka types: Gluten-Free, Grain, Corn, Classic, Organic, Herb, Premium, Citrus, Potato, and Flavored"
+
+Key Terms and Concepts:
+
+* Vodka types (e.g. Gluten-Free, Grain, Corn, etc.)
+* Stock numbers
+* Semantic similarity: focus on vodka-related terms, synonyms, and related concepts to retrieve relevant results.
+
+Vector Search Strategy:
+
+* Use a combination of exact matching and semantic search to retrieve stock numbers for the specified vodka types.
+* Leverage word embeddings and vector representations to capture relationships between vodka-related terms and concepts.
+* Adjust the search algorithm to prioritize results with high semantic similarity to the query terms.
+
+Example Search Vectors:
+
+* ["Gluten-Free Vodka", "Grain Vodka", "Corn Vodka", ...]
+* ["Vodka Stock Numbers", "Inventory", "Product Codes"]
+* ["Premium Spirits", "Organic Liquor", "Flavored Drinks"]
+
+By refining the query and focusing on key terms and concepts, the vector search can effectively retrieve relevant stock numbers for the various vodka types while minimizing noise and irrelevant results.
+2024-08-07 03:45:38,652 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.1832664, 1.1917919, 1.2236791, 1.2286403, 1.2399125, 1.2721691, 1.2807317, 1.285142, 1.2892339, 1.3018214], ids=['28', '22', '12', '14', '48', '24', '13', '27', '41', '50'])
+Batches: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s]
+2024-08-07 03:45:38,730 - INFO - Querying vector store with query: Refined Query for Vector Search:
+
+"Find stock numbers for various vodka types: Gluten-Free, Grain, Corn, Classic, Organic, Herb, Premium, Citrus, Potato, and Flavored"
+
+Key Terms and Concepts:
+
+* Vodka types (e.g. Gluten-Free, Grain, Corn, etc.)
+* Stock numbers
+* Semantic similarity: focus on vodka-related terms, synonyms, and related concepts to retrieve relevant results.
+
+Vector Search Strategy:
+
+* Use a combination of exact matching and semantic search to retrieve stock numbers for the specified vodka types.
+* Leverage word embeddings and vector representations to capture relationships between vodka-related terms and concepts.
+* Adjust the search algorithm to prioritize results with high semantic similarity to the query terms.
+
+Example Search Vectors:
+
+* ["Gluten-Free Vodka", "Grain Vodka", "Corn Vodka", ...]
+* ["Vodka Stock Numbers", "Inventory", "Product Codes"]
+* ["Premium Spirits", "Organic Liquor", "Flavored Drinks"]
+
+By refining the query and focusing on key terms and concepts, the vector search can effectively retrieve relevant stock numbers for the various vodka types while minimizing noise and irrelevant results.
+2024-08-07 03:45:38,732 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664], ids=['11700', '11701', '11702', '11703', '11704', '11705', '11706', '11707', '11708', '11709'])
+Batches: 100%|██████████| 1/1 [00:00<00:00, 12.42it/s]
+2024-08-07 03:45:38,817 - INFO - Querying vector store with query: Refined Query for Vector Search:
+
+"Find stock numbers for various vodka types: Gluten-Free, Grain, Corn, Classic, Organic, Herb, Premium, Citrus, Potato, and Flavored"
+
+Key Terms and Concepts:
+
+* Vodka types (e.g. Gluten-Free, Grain, Corn, etc.)
+* Stock numbers
+* Semantic similarity: focus on vodka-related terms, synonyms, and related concepts to retrieve relevant results.
+
+Vector Search Strategy:
+
+* Use a combination of exact matching and semantic search to retrieve stock numbers for the specified vodka types.
+* Leverage word embeddings and vector representations to capture relationships between vodka-related terms and concepts.
+* Adjust the search algorithm to prioritize results with high semantic similarity to the query terms.
+
+Example Search Vectors:
+
+* ["Gluten-Free Vodka", "Grain Vodka", "Corn Vodka", ...]
+* ["Vodka Stock Numbers", "Inventory", "Product Codes"]
+* ["Premium Spirits", "Organic Liquor", "Flavored Drinks"]
+
+By refining the query and focusing on key terms and concepts, the vector search can effectively retrieve relevant stock numbers for the various vodka types while minimizing noise and irrelevant results.
+2024-08-07 03:45:38,818 - INFO - Received results from vector store: VectorStoreQueryResult(nodes=None, similarities=[1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664, 1.1832664], ids=['1402', '1403', '1404', '1405', '1406', '1407', '1408', '1409', '1410', '1411'])
+2024-08-07 03:45:38,820 - INFO - Top results: [{'content': "{'Name': 'Premium Vodka Vodka', 'Price': 169.874, 'Order Date': '2024-07-31', 'Delivered Date': '2024-08-07', 'Stock': 126}", 'metadata': {'Name': 'Premium Vodka Vodka', 'Price': 169.874, 'Order Date': '2024-07-31', 'Delivered Date': '2024-08-07', 'Stock': 126}, 'score': 1.3018213510513306}, {'content': "{'Name': 'Organic Vodka Vodka', 'Price': 20.17, 'Order Date': '2024-07-15', 'Delivered Date': '2024-07-19', 'Stock': 119}", 'metadata': {'Name': 'Organic Vodka Vodka', 'Price': 20.17, 'Order Date': '2024-07-15', 'Delivered Date': '2024-07-19', 'Stock': 119}, 'score': 1.289233922958374}, {'content': "{'Name': 'Grain Vodka Vodka', 'Price': 121.745, 'Order Date': '2024-06-29', 'Delivered Date': '2024-07-09', 'Stock': 112}", 'metadata': {'Name': 'Grain Vodka Vodka', 'Price': 121.745, 'Order Date': '2024-06-29', 'Delivered Date': '2024-07-09', 'Stock': 112}, 'score': 1.285141944885254}, {'content': "{'Name': 'Classic Vodka Vodka', 'Price': 195.326, 'Order Date': '2024-07-02', 'Delivered Date': '2024-07-11', 'Stock': 111}", 'metadata': {'Name': 'Classic Vodka Vodka', 'Price': 195.326, 'Order Date': '2024-07-02', 'Delivered Date': '2024-07-11', 'Stock': 111}, 'score': 1.2807316780090332}, {'content': "{'Name': 'Gluten-Free Vodka Vodka', 'Price': 170.449, 'Order Date': '2024-05-07', 'Delivered Date': '2024-05-13', 'Stock': 121}", 'metadata': {'Name': 'Gluten-Free Vodka Vodka', 'Price': 170.449, 'Order Date': '2024-05-07', 'Delivered Date': '2024-05-13', 'Stock': 121}, 'score': 1.2721691131591797}, {'content': "{'Name': 'Potato Vodka Vodka', 'Price': 51.847, 'Order Date': '2024-07-03', 'Delivered Date': '2024-07-13', 'Stock': 74}", 'metadata': {'Name': 'Potato Vodka Vodka', 'Price': 51.847, 'Order Date': '2024-07-03', 'Delivered Date': '2024-07-13', 'Stock': 74}, 'score': 1.239912509918213}, {'content': "{'Name': 'Corn Vodka Vodka', 'Price': 63.949, 'Order Date': '2024-07-27', 'Delivered Date': '2024-07-28', 'Stock': 108}", 'metadata': {'Name': 'Corn Vodka Vodka', 'Price': 63.949, 'Order Date': '2024-07-27', 'Delivered Date': '2024-07-28', 'Stock': 108}, 'score': 1.2286403179168701}, {'content': "{'Name': 'Citrus Vodka Vodka', 'Price': 145.021, 'Order Date': '2024-06-24', 'Delivered Date': '2024-06-29', 'Stock': 102}", 'metadata': {'Name': 'Citrus Vodka Vodka', 'Price': 145.021, 'Order Date': '2024-06-24', 'Delivered Date': '2024-06-29', 'Stock': 102}, 'score': 1.2236790657043457}, {'content': "{'Name': 'Flavored Vodka Vodka', 'Price': 196.686, 'Order Date': '2024-08-04', 'Delivered Date': '2024-08-14', 'Stock': 118}", 'metadata': {'Name': 'Flavored Vodka Vodka', 'Price': 196.686, 'Order Date': '2024-08-04', 'Delivered Date': '2024-08-14', 'Stock': 118}, 'score': 1.1917918920516968}, {'content': "{'Name': 'Herb Vodka Vodka', 'Price': 93.769, 'Order Date': '2024-06-23', 'Delivered Date': '2024-06-27', 'Stock': 116}", 'metadata': {'Name': 'Herb Vodka Vodka', 'Price': 93.769, 'Order Date': '2024-06-23', 'Delivered Date': '2024-06-27', 'Stock': 116}, 'score': 1.1832664012908936}]
+2024-08-07 03:45:38,823 - INFO - Sending request to LlamaAPI for result interpretation: please provide me a stock number for Gluten-Free Vodka, Grain Vodka, Corn Vodka, Classic Vodka, Organic Vodka, Herb Vodka, Premium Vodka, Citrus Vodka, Potato Vodka, and Flavored Vodka
+
+Assistant: Here is the answer based on the provided vector search results:
+
+Here are the stock numbers for the requested types of vodka:
+
+* Gluten-Free Vodka: 121
+* Grain Vodka: 112
+* Corn Vodka: 108
+* Classic Vodka: 111
+* Organic Vodka: 119
+* Herb Vodka: 116
+* Premium Vodka: 126
+* Citrus Vodka: 102
+* Potato Vodka: 74
+* Flavored Vodka: 118
+
+You: 2024-08-07 03:45:43,398 - INFO - Received interpretation from LlamaAPI: <Response [200]>
