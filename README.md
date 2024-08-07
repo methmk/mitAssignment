@@ -96,6 +96,6 @@ Asynchronous Query Handling: Refine and interpret user queries using LlamaAPI.
 
        $python generateDummyData.py
 
-3. **Run the Main Application**: Execute the main script that will use the generated dummy data and perform batch processing:
+3. **Run the Main Application**: Execute the main script that will use the generated dummy data, perform batch processing and start the chat in terminal:
 
        $python llama3.1.py
