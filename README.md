@@ -8,19 +8,25 @@
 This project aims to automate the analysis of alcohol stock data using AI and vector search techniques. The primary focus is on data loading and processing, embedding generation, vector search implementation, and AI-based query refinement and interpretation.
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Libraries and Initialization](#libraries-and-initialization)
-3. [Loading JSON Data](#loading-json-data)
-4. [Generating and Saving Embeddings](#generating-and-saving-embeddings)
-5. [Creating and Saving FAISS Index](#creating-and-saving-faiss-index)
-6. [Embeddings and Indices Management](#embeddings-and-indices-management)
-7. [Initializing Vector Stores](#initializing-vector-stores)
-8. [AI-based Query Handling](#ai-based-query-handling)
-9. [Vector Search Function](#vector-search-function)
-10. [Handling User Queries](#handling-user-queries)
-11. [Interactive Chat Application](#interactive-chat-application)
-12. [Conclusion](#conclusion)
-13. [How to Run the Code](#how-to-run-the-code)
+1. [Colab Notebook](#colab-notebook)
+2. [Introduction](#introduction)
+3. [Libraries and Initialization](#libraries-and-initialization)
+4. [Loading JSON Data](#loading-json-data)
+5. [Generating and Saving Embeddings](#generating-and-saving-embeddings)
+6. [Creating and Saving FAISS Index](#creating-and-saving-faiss-index)
+7. [Embeddings and Indices Management](#embeddings-and-indices-management)
+8. [Initializing Vector Stores](#initializing-vector-stores)
+9. [AI-based Query Handling](#ai-based-query-handling)
+10. [Vector Search Function](#vector-search-function)
+11. [Handling User Queries](#handling-user-queries)
+12. [Interactive Chat Application](#interactive-chat-application)
+13. [Conclusion](#conclusion)
+14. [How to Run the Code](#how-to-run-the-code)
+
+## Colab Notebook
+You can also run the code in the provided Colab notebook. Click the link below to open the notebook:
+
+[Colab Notebook](https://tinyurl.com/4u3tvztk)
 
 ## Introduction
 **Objective**: To automate the analysis of alcohol stock data using AI and vector search techniques.
